@@ -11,8 +11,10 @@
 :root{
     --primary-color: #5f58fe;
     --background-color: #000;
+    --background-secondary: #ffffff1a;
     --black-light: #151621;
     --border-color: #e6e6e6;
+    --text-secondary: #fff9;
     --black-light-gradient: linear-gradient(#000, #4f4f4f);
 }
 
@@ -23,6 +25,10 @@ body{
 .nav-container{
     background-color: var(--background-color);
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     padding: 20px 60px;
@@ -52,6 +58,7 @@ li a:hover{
 
 .cart{
     color: white;
+    position: relative;
 }
 
 .cart .badge{
@@ -63,4 +70,127 @@ li a:hover{
     align-items: center;
     justify-content: center;
     background-color: var(--primary-color);
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.btn{
+    padding: 15px 25px;
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+
+.hero-section{
+    background-color: var(--background-color);
+    padding-top: 200px;
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    align-items: center;
+    color: white;
+    gap: 100px;
+}
+
+.hero-section-left {
+    width: 60%;
+}
+
+.sub-heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: max-content;
+    padding: 6px 6px;
+    padding-left: 14px;
+    border-radius: 200px;
+    border: 1px solid #ffffff0d;
+    background-color: var(--background-secondary);
+}
+
+.sub-heading p{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.hero-section-left h1{
+    font-size: 70px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 30px;
+}
+
+.hero-section-left > p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-top: 20px;
+    color: var(--text-secondary);
+}
+
+.arrow-right-container{
+    width: 30px;
+    height: 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff0d;
+}
+
+.hero-buttons-container{
+    display: flex;
+    align-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.hero-get-started,
+.how-it-works {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.how-it-works {
+    background-color: #151621;
+    border: 1px solid var(--border-color);
+}
+
+.hero-section-right {
+    width: 40%;
+    position: relative;
+}
+
+.hero-section-right img{
+    width: 90%;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+    border-radius: 10px;
+    z-index: 10;
+    position: relative;
+}
+
+.image-back-drop {
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    top: 150px;
+    height: 500px;
+    z-index: 0;
+}
+
+.image-back-drop img{
+    width: 100%;
+    height: 100%;
 }
