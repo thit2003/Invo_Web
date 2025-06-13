@@ -15,6 +15,7 @@
     --black-light: #151621;
     --border-color: #e6e6e6;
     --text-secondary: #fff9;
+    --text-gray: #727a88;
     --black-light-gradient: linear-gradient(#000, #4f4f4f);
 }
 
@@ -193,4 +194,123 @@ li a:hover{
 .image-back-drop img{
     width: 100%;
     height: 100%;
+}
+
+.hero-image-slider{
+    background-color: var(--background-color);
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.image-slider {
+    display: flex;
+    padding-left: 60px;
+    padding-right: 60px;
+    gap: 100px;
+    margin-top: 20px;
+}
+
+.features-section{
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 150px;
+}
+
+.feature-heading{
+    font-size: 50px;
+    font-weight: 500;
+    width: 40%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-subheading{
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--text-gray);
+    width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.feature-grid-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.feature-card{
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    padding: 40px 30px;
+}
+
+.feature-card h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.feature-card p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: var(--text-gray);
+}
+
+.feature-card img{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.first-feature-card{
+    grid-column: 1 / span 2;
+}
+
+.second-feature-card{
+    grid-column: 3 / span 3;
+}
+
+.third-feature-card{
+    grid-column: 1/ span 3;
+}
+
+.forth-feature-card{
+    grid-column: 4 / span 2;
+}
+
+.about-section{
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 15px;
+    background-color: var(--background-secondary);
+    padding: 80px 50px;
+}
+
+.about-heading{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.about-heading-left {
+    width: 50%;
+    /* font-size: 55px;
+    font-weight: 600;
+    padding-right: ; */
+}
+
+.about-heading-left > p {
+    font-size: 55px;
+    width: 90%;
+    background-color: gray;
+    font-weight: 600;
 }
